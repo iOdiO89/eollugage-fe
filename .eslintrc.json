@@ -19,6 +19,12 @@
     "@typescript-eslint/quotes": "off",
     "@typescript-eslint/dot-notation": "off",
     "react/jsx-one-expression-per-line": "off",
-    "react/button-has-type": "off"
+    "react/button-has-type": "off",
+    "react/style-prop-object": "off",
+    "import/prefer-default-export": "off",
+    "linebreak-style": 0,
+    "react/jsx-wrap-multilines": "off",
+    "arrow-parens": ["error", "as-needed"],
+    "object-curly-newline": ["error", { "consistent": true }]
   }
 }

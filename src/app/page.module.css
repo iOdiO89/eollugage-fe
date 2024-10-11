@@ -37,7 +37,7 @@
 }
 
 .backgroundImage {
-  background-image: url("/image/eollugage_store.png"),
+  background-image: url('/image/eollugage_store.png'),
     linear-gradient(to bottom, black 5%, #00000000 20%, #00000000 80%, black 95%);
   background-blend-mode: multiply;
   background-size: cover;

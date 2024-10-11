@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import LoginButton from '@/component/main/loginButton'
-import FlexBox from '@/component/shared/flexbox'
+import LoginButton from '@/widgets/join/ui/LoginButton'
+import FlexBox from '@/shared/ui/Flexbox'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
         <Image height={38} width={234} alt="text" src="/image/eollugage_title.png" />
       </div>
       <FlexBox direction="col" className={`${styles.bodyAnimation} justify-between w-full h-full`}>
-        <div className="text-[#A8A8A8] body-02-regular">간편하게 일하는 법</div>
+        <div className="text-Gray-40 body-02-regular">간편하게 일하는 법</div>
         <div className={styles.backgroundImage} />
         <FlexBox direction="col" className="w-full px-spacing-04 gap-spacing-04">
           <LoginButton type="apple" />

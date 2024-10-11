@@ -1,3 +1,9 @@
+import InquireWidget from '@/widgets/inquire/ui/InquireWidget'
+
 export default function InquirePage() {
-  return <div>문의하기</div>
+  return (
+    <main>
+      <InquireWidget />
+    </main>
+  )
 }
