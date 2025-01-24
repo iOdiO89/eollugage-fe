@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { TopBar, Icon } from '@eolluga/eolluga-ui'
@@ -10,6 +10,10 @@ import { sendRNFunction } from '@/shared'
 export default function SettingsWidget({ storeId }: { storeId: string }) {
   const { push } = useRouter()
   const [isModalOpen, setIsModalOpen] = useState(false)
+
+  useEffect(() => {
+    sendRNFunction('setSafeAreaEdges', ['bottom'])
+  }, [])
 
   return (
     <div className="pt-4 pb-24">
