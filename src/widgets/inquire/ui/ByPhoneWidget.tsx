@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { TopBar, TextField, ButtonMobile } from '@eolluga/eolluga-ui'
 import ToastMessage from '@/shared/ui/ToastMessage'
+import { sendRNFunction } from '@/shared'
 
 export default function ByPhoneWidget({ storeId }: { storeId: string }) {
   const { push } = useRouter()
@@ -11,7 +12,7 @@ export default function ByPhoneWidget({ storeId }: { storeId: string }) {
   const phoneNumber = '010-4000-9842'
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(phoneNumber)
+    sendRNFunction('copyMessage', phoneNumber)
     setIsClicked(true)
   }
 
